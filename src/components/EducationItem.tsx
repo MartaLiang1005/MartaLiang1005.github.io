@@ -1,15 +1,11 @@
-// src/components/ExperienceItem.tsx
+// src/components/EducationItem.tsx
 import React from 'react';
 import { Card, CardContent, Typography, List, ListItem } from '@mui/joy';
+import { Education } from '../data/education';
 
-interface ExperienceItemProps {
-  title: string;
-  dateRange: string;
-  bulletPoints: string[];
-}
-
-const ExperienceItem: React.FC<ExperienceItemProps> = ({
-  title,
+const EducationItem: React.FC<Education> = ({
+  institution,
+  degree,
   dateRange,
   bulletPoints,
 }) => {
@@ -17,9 +13,12 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
     <Card variant="outlined" sx={{ mb: 3 }}>
       <CardContent>
         <Typography level="h3" sx={{ mb: 1, color: 'primary.600' }}>
-          {title}
+          {institution}
         </Typography>
-        <Typography level="body-md" sx={{ color: 'neutral.500', fontWeight: 'bold', mb: 2 }}>
+        <Typography level="body-md" sx={{ fontWeight: 'bold', mb: 1 }}>
+          {degree}
+        </Typography>
+        <Typography level="body-md" sx={{ color: 'neutral.500', mb: 2 }}>
           {dateRange}
         </Typography>
         <List sx={{ listStyle: 'disc', pl: 4 }}>
@@ -34,4 +33,4 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   );
 };
 
-export default ExperienceItem;
+export default EducationItem;

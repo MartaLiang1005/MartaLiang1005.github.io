@@ -33,7 +33,7 @@ const theme = extendTheme({
         },
         background: {
           // Page background
-          body: brandColors.pinkBackground,
+          body: brandColors.primary[50],
           // Cards, sheets, etc.
           surface: '#fff',
         },

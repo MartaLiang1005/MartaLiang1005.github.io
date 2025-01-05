@@ -1,6 +1,6 @@
-// Navbar.tsx (using MUI Joy)
+// src/components/Navbar.tsx
 import React from 'react';
-import { Sheet, Typography, Link } from '@mui/joy';
+import { Sheet, Typography, Box, Link } from '@mui/joy';
 
 const Navbar: React.FC = () => {
   return (
@@ -14,20 +14,20 @@ const Navbar: React.FC = () => {
         p: 2,
       }}
     >
-      <Typography level="h2" sx={{ color: 'white' }}>
-        Marta's Planet
+      <Typography level="h2" sx={{ color: 'white', fontWeight: 'bold' }}>
+        Marta Liang-Portfolio
       </Typography>
-      <nav>
-        <Link href="/" sx={{ color: '#fff', mx: 1 }}>
-          Home
+      <Box component="nav" sx={{ display: 'flex', gap: 2 }}>
+        <Link href="#projects" sx={{ color: '#fff', textDecoration: 'none' }}>
+          Projects
         </Link>
-        <Link href="/experiences" sx={{ color: '#fff', mx: 1 }}>
-          Experiences
+        <Link href="#education" sx={{ color: '#fff', textDecoration: 'none' }}>
+          Education
         </Link>
-        <Link href="/project-gallery" sx={{ color: '#fff', mx: 1 }}>
-          Project Gallery
+        <Link href="#research" sx={{ color: '#fff', textDecoration: 'none' }}>
+          Research
         </Link>
-      </nav>
+      </Box>
     </Sheet>
   );
 };

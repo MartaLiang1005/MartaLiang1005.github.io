@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import ProjectItem from './components/ProjectItem';
 import EducationItem from './components/EducationItem';
 import ExperienceItem from './components/ExperienceItem';
-
 import { projects } from './data/projects';
 import { educationList } from './data/education';
 import { researchExperiences } from './data/research';
@@ -24,7 +23,7 @@ function App() {
         sx={{
           py: 6,
           textAlign: 'center',
-          backgroundImage: './data/photo.jpg',
+          backgroundImage: `url(/photo.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#fff',
@@ -147,6 +146,7 @@ function App() {
             title={res.title}
             dateRange={res.dateRange}
             bulletPoints={res.bulletPoints}
+            techStack={[]}
           />
         ))}
       </Sheet>

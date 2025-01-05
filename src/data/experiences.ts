@@ -10,6 +10,7 @@ export const experiences = [
       'Implemented and maintained the website using TypeScript for development and AWS service for database. Implemented the Personal Information and Login & Security page.',
       'Contributed to the QA tests and debugging process for the prototype delivery.',
     ],
+    techStack: ['TypeScript', 'React', 'AWS', 'HTML/CSS', 'REST API'],
   },
   {
     category: 'Research Project',
@@ -21,6 +22,8 @@ export const experiences = [
       'Led cross-functional team meetings to synchronize implementation details and align the UI for the mobile and browser-based versions.',
       'Implemented front-end integration and connected the interface to the backend database.',
     ],
+    techStack: ['TypeScript', 'React', 'MangoDB', 'REST API'],
+
   },
   {
     category: 'Summer Intern',
@@ -31,6 +34,8 @@ export const experiences = [
       'Utilized regular regression models, LSTM, and GRU to predict industry performance, achieving a 30% reduction in MSE through cross-validation.',
       'Conducted backtesting of industry rotation strategies using historical industry price data and visualized results with Matplotlib, with the best factor achieving 18% alpha and less than 4% maximum drawdown.',
     ],
+    techStack: ['Python', 'gplearn', 'Tensorflow', 'PyTorch'],
+
   },
   {
     category: 'Summer Intern',
@@ -42,5 +47,6 @@ export const experiences = [
       'Enhanced data storage and querying efficiency in MySQL, reducing processing time by approximately 40 seconds.',
       'Applied test-driven development by creating unit and integration tests using Pytest.',
     ],
+    techStack: ['Python', 'Django', 'MySQL'],
   }
 ];

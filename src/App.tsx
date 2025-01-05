@@ -4,14 +4,6 @@ import { CssBaseline, Sheet, Typography } from '@mui/joy';
 import Navbar from './components/Navbar'; 
 import ExperienceItem from './components/ExperienceItem';
 
-/**
- * The main App component.
- *
- * This component renders the app's main content area,
- * containing the main title and a research experience item.
- *
- * @returns The App component.
- */
 function App() {
   return (
     <>

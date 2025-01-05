@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript features
+    "target": "ES2017",
+    "moduleResolution": "node",
+    // Use ESNext modules so that CRA can handle bundling efficiently
+    "module": "ESNext",
+
+    // Very important for React 17+ or React 18, especially with CRA:
+    "jsx": "react-jsx",
+
+    // This allows default imports from modules with no default export.
+    // Also crucial for many React libraries.
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // Enforce file-name casing consistency in imports (helps avoid CI/CD issues).
+    "forceConsistentCasingInFileNames": true,
+
+    // Enable "strict mode" for better type-checking.
+    "strict": true,
+
+    // Skips type checking of .d.ts files (third-party libraries).
+    // Common in CRA projects for speed and to avoid external type errors.
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

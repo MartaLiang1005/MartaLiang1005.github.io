@@ -1,4 +1,5 @@
 // src/data/projects.ts
+
 export interface Project {
     title: string;
     description: string;
@@ -9,16 +10,24 @@ export interface Project {
   export const projects: Project[] = [
     {
       title: 'Personal Portfolio Website',
-      description: 'Created a personal website using React, MUI Joy, and TypeScript to showcase my projects and experiences.',
+      description:
+        'Created a personal website using React, MUI Joy, and TypeScript to showcase my projects and experiences.',
       link: 'https://github.com/MartaLiang1005/my-portfolio',
-      techStack: ['React', 'TypeScript', 'MUI Joy']
+      techStack: ['React', 'TypeScript', 'MUI Joy'],
     },
     {
-      title: 'FPGA Accelerator',
-      description: 'Developed an FPGA-based accelerator for matrix multiplication, improving performance by 3x.',
-      link: 'https://github.com/MartaLiang1005/fpga-accel',
-      techStack: ['Verilog', 'HeteroCL', 'Python']
+      title: 'Calorie Counter App',
+      description:
+        'Developed RESTful APIs using Java to handle calorie search requests, user authentication, and database interactions. Built a browser-based graphical front end in Kotlin to support user interactions.',
+      link: 'https://github.com/MartaLiang1005/Calories-APP',
+      techStack: ['Java', 'Kotlin', 'MySQL', 'REST API'],
     },
-    // ... add more projects
+    {
+      title: 'OCaml Casino Simulator',
+      description:
+        'Implemented Money, Slot-machine, and Roulette system and functions using OCaml.',
+      link: 'https://github.com/MartaLiang1005/Casino-Simulator',
+      techStack: ['OCaml','Java','Unix'],
+    },
   ];
   

@@ -9,6 +9,7 @@ import ExperienceItem from './components/ExperienceItem';
 import { projects } from './data/projects';
 import { educationList } from './data/education';
 import { researchExperiences } from './data/research';
+import { experiences } from './data/experiences';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         sx={{
           py: 6,
           textAlign: 'center',
-          backgroundImage: 'url("https://via.placeholder.com/1600x600?text=Your+Hero+Image")',
+          backgroundImage: './data/photo.jpg',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#fff',
@@ -35,10 +36,42 @@ function App() {
         <Typography level="h3" sx={{ fontSize: '1.25rem', mb: 2 }}>
           Software Engineer · Researcher · Tech Enthusiast
         </Typography>
-        <Button variant="solid" color="neutral" sx={{ mt: 2 }}>
-          Contact Me
+        <Button
+        variant="solid"
+        color="neutral"
+        sx={{ mt: 2 }}
+        component="a"
+        href="mailto:yl3386@cornell.edu"
+        >
+        Contact Me
         </Button>
+
       </Sheet>
+
+      {/* Experiences Section */}
+      <Sheet
+        id="experiences"
+        sx={{
+          maxWidth: 900,
+          mx: 'auto',
+          mt: 4,
+          p: 3,
+          borderRadius: 8,
+          backgroundColor: 'background.surface',
+          boxShadow: 'md',
+        }}
+      >
+        <Typography
+          level="h2"
+          sx={{ mb: 3, textAlign: 'center', textDecoration: 'underline', color: 'primary.600' }}
+        >
+          Experiences
+        </Typography>
+        {experiences.map((exp, i) => (
+          <ExperienceItem key={i} {...exp} />
+        ))}
+      </Sheet>
+
 
       {/* Projects Section */}
       <Sheet

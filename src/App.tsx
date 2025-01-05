@@ -45,9 +45,8 @@ function App() {
         >
         Contact Me
         </Button>
-        <SkillProgress />;
-
       </Sheet>
+      <SkillProgress />
 
       {/* Experiences Section */}
       <Sheet

@@ -9,7 +9,6 @@ import { projects } from './data/projects';
 import { educationList } from './data/education';
 import { researchExperiences } from './data/research';
 import { experiences } from './data/experiences';
-import SkillProgress from './components/Skills';
 
 function App() {
   return (
@@ -46,7 +45,6 @@ function App() {
         Contact Me
         </Button>
       </Sheet>
-      <SkillProgress />
 
       {/* Experiences Section */}
       <Sheet

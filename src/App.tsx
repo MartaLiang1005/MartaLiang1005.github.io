@@ -29,10 +29,10 @@ function App() {
           color: '#fff',
         }}
       >
-        <Typography level="h1" sx={{ fontSize: '2.5rem', mb: 1 }}>
+        <Typography level="h1" sx={{ fontSize: '2.5rem', mb: 1, color: '#fb95f7'}}>
           Hello, I'm Marta
         </Typography>
-        <Typography level="h3" sx={{ fontSize: '1.25rem', mb: 2 }}>
+        <Typography level="h3" sx={{ fontSize: '1.25rem', mb: 2, color: '#fb95f7' }}>
           Software Engineer · Researcher · Tech Enthusiast
         </Typography>
         <Button

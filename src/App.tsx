@@ -23,24 +23,27 @@ function App() {
   sx={{
     py: 6,
     textAlign: 'center',
-    backgroundImage: `url(/photo.jpg)`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    color: '#fff',
-    filter: 'blur(5px)', 
     position: 'relative', 
-    '&::before': { 
-      content: '""',
+    color: '#fff',
+    overflow: 'hidden',
+  }}
+>
+   {/* Background image with blur */}
+   <div
+    style={{
+      backgroundImage: `url(/photo.jpg)`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      filter: 'blur(5px)', 
       position: 'absolute',
       top: 0,
       left: 0,
       width: '100%',
       height: '100%',
-      backgroundColor: 'rgba(0, 0, 0, 0.5)', 
-      zIndex: 1,
-    },
-  }}
->
+      zIndex: -1, 
+    }}
+  ></div>
+   {/* Content */}
   <Typography
     level="h1"
     sx={{
@@ -48,7 +51,6 @@ function App() {
       mb: 1,
       color: '#c253b1',
       fontFamily: 'Roboto, Arial, sans-serif', 
-      zIndex: 2, 
       position: 'relative', 
     }}
   >
@@ -60,9 +62,9 @@ function App() {
       fontSize: '1.25rem',
       mb: 2,
       color: '#c253b1',
-      fontFamily: 'Roboto, Arial, sans-serif', // Match font with the header
-      zIndex: 2, // Ensure text appears above the background and overlay
-      position: 'relative', // Necessary to layer properly
+      fontFamily: 'Roboto, Arial, sans-serif',
+      zIndex: 2,
+      position: 'relative', 
     }}
   >
     Software Engineer · Researcher · Tech Enthusiast

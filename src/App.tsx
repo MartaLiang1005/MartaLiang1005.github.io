@@ -17,24 +17,57 @@ function App() {
       <Navbar />
 
       {/* Hero Section */}
-      <Sheet
-        variant="solid"
-        color="primary"
-        sx={{
-          py: 6,
-          textAlign: 'center',
-          backgroundImage: `url(/photo.jpg)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          color: '#fff',
-        }}
-      >
-        <Typography level="h1" sx={{ fontSize: '2.5rem', mb: 1, color: '#c253b1'}}>
-          Hello, I'm Marta
-        </Typography>
-        <Typography level="h3" sx={{ fontSize: '1.25rem', mb: 2, color: '#c253b1' }}>
-          Software Engineer · Researcher · Tech Enthusiast
-        </Typography>
+<Sheet
+  variant="solid"
+  color="primary"
+  sx={{
+    py: 6,
+    textAlign: 'center',
+    backgroundImage: `url(/photo.jpg)`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    color: '#fff',
+    filter: 'blur(5px)', 
+    position: 'relative', 
+    '&::before': { 
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+      zIndex: 1,
+    },
+  }}
+>
+  <Typography
+    level="h1"
+    sx={{
+      fontSize: '2.5rem',
+      mb: 1,
+      color: '#c253b1',
+      fontFamily: 'Roboto, Arial, sans-serif', 
+      zIndex: 2, 
+      position: 'relative', 
+    }}
+  >
+    Hello, I'm Marta
+  </Typography>
+  <Typography
+    level="h3"
+    sx={{
+      fontSize: '1.25rem',
+      mb: 2,
+      color: '#c253b1',
+      fontFamily: 'Roboto, Arial, sans-serif', // Match font with the header
+      zIndex: 2, // Ensure text appears above the background and overlay
+      position: 'relative', // Necessary to layer properly
+    }}
+  >
+    Software Engineer · Researcher · Tech Enthusiast
+  </Typography>
+
         <Button
         variant="solid"
         color="neutral"

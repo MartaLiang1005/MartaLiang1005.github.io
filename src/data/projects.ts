@@ -12,7 +12,7 @@ export interface Project {
       title: 'Personal Portfolio Website',
       description:
         'Created a personal website using React, MUI Joy, and TypeScript to showcase my projects and experiences.',
-      link: 'https://github.com/MartaLiang1005/my-portfolio',
+      link: 'https://github.com/MartaLiang1005/MartaLiang1005.github.io',
       techStack: ['React', 'TypeScript', 'MUI Joy'],
     },
     {

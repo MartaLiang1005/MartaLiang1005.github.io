@@ -34,8 +34,9 @@ function App() {
     sx={{
       fontSize: '2.5rem',
       mb: 1,
-      color: '#c253b1',
+      color: 'white',
       fontFamily: 'Roboto, Arial, sans-serif', 
+      zIndex: 2,
       position: 'relative', 
     }}
   >
@@ -46,19 +47,20 @@ function App() {
     sx={{
       fontSize: '1.25rem',
       mb: 2,
-      color: '#c253b1',
+      color: 'white',
       fontFamily: 'Roboto, Arial, sans-serif',
       zIndex: 2,
       position: 'relative', 
     }}
   >
-    Software Engineer · Researcher · Tech Enthusiast
+    Software Engineer · Quant Developer · Tech Researcher
+    TypeScript / React / Python / TensorFlow / Full-Stack Dev
   </Typography>
 
         <Button
         variant="solid"
         color="neutral"
-        sx={{ mt: 2 }}
+        sx={{ mt: 2, zIndex: 2, position: 'relative'}}
         component="a"
         href="mailto:yl3386@cornell.edu"
         >
@@ -76,7 +78,7 @@ function App() {
       left: 0,
       width: '100%',
       height: '100%',
-      zIndex: -1, 
+      zIndex: 0, 
     }}
   ></div>
       </Sheet>

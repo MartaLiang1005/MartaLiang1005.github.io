@@ -28,21 +28,6 @@ function App() {
     overflow: 'hidden',
   }}
 >
-   {/* Background image with blur */}
-   <div
-    style={{
-      backgroundImage: `url(/photo.jpg)`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      filter: 'blur(5px)', 
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      zIndex: -1, 
-    }}
-  ></div>
    {/* Content */}
   <Typography
     level="h1"
@@ -79,6 +64,21 @@ function App() {
         >
         Contact Me
         </Button>
+         {/* Background image with blur */}
+   <div
+    style={{
+      backgroundImage: `url(/photo.jpg)`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      filter: 'blur(5px)', 
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      zIndex: -1, 
+    }}
+  ></div>
       </Sheet>
 
       {/* Experiences Section */}
